@@ -9,13 +9,13 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 
-#include "common/shader.hpp"
+#include "src/shaders/shader.hpp"
 
 const int WINDOW_WIDTH = 600;
 const int WINDOW_HEIGHT = 400;
 
-const char* VERTEX_SHADER_FILE = "../VertexShader.vertexshader";
-const char* FRAGMENT_SHADER_FILE = "../FragmentShader.fragmentshader";
+const char* VERTEX_SHADER_FILE = "../src/shaders/VertexShader.vertexshader";
+const char* FRAGMENT_SHADER_FILE = "../src/shaders/FragmentShader.fragmentshader";
 
 //Forward Declaration
 void TestMatrices();

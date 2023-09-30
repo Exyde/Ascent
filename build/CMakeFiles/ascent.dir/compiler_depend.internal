@@ -374,5 +374,5 @@ CMakeFiles/ascent.dir/main.cpp.o
  /usr/include/glm/detail/type_half.inl
  /usr/include/glm/integer.hpp
  /usr/include/glm/detail/func_integer.inl
- /home/sly/workspace/dive/Ascent/common/shader.hpp
+ /home/sly/workspace/dive/Ascent/src/shaders/shader.hpp
 

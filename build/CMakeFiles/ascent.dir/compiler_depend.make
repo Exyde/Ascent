@@ -373,8 +373,10 @@ CMakeFiles/ascent.dir/main.cpp.o: ../main.cpp \
   /usr/include/glm/detail/type_half.inl \
   /usr/include/glm/integer.hpp \
   /usr/include/glm/detail/func_integer.inl \
-  ../common/shader.hpp
+  ../src/shaders/shader.hpp
 
+
+../src/shaders/shader.hpp:
 
 /usr/include/glm/integer.hpp:
 
@@ -807,8 +809,6 @@ CMakeFiles/ascent.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/glm/ext/vector_double2.hpp:
-
-../common/shader.hpp:
 
 /usr/include/c++/11/bits/std_abs.h:
 
