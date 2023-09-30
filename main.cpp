@@ -5,32 +5,11 @@
 #include <sstream>
 #include <vector>
 
-
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 
 #include "common/shader.hpp"
-
-//Tutorial 1 Questions : [3H~~ Train Montpellier - Bordeux]
-    // Different Context / Windows ?
-    // Use IMGUI Fast ?
-
-//Tutorial 2 Questions :
-    // VAO : Vertex Array Object ! :o
-    //GLSL : Always recompiled at runtime.
-    //Mieux Acceder aux Shaders a.k.a comment mieux tout linker
-    //Rajouter des fonctions customs dans les shaders
-    //Btw Shaders are comiled at runtime, so you can edit them without recompiling the whole engine.
-
-//Tutorial 3 : Matrices [Core] Read : 1/8
-    //Aled
-
-//Buffer : Linear array of memory, managed by openGL. It can only access some parts of the memory. Kind of GPU Array 
-//We create buffer to store data gpu side. Then we need to bind thoses buffers to context to tell OpenGL What's inside and how to process it.
-
-//___________________________________________________//
-
 
 const int WINDOW_WIDTH = 600;
 const int WINDOW_HEIGHT = 400;
@@ -133,6 +112,9 @@ int main(int argc, char** argv)
         0, 1, 0,
         0, 0, 1
     };  
+
+    //Buffer : Linear array of memory, managed by openGL. It can only access some parts of the memory. Kind of GPU Array 
+    //We create buffer to store data gpu side. Then we need to bind thoses buffers to context to tell OpenGL What's inside and how to process it.
 
     //Vertex Buffer
     GLuint vertexBuffer; //Identifier / ID
