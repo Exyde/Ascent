@@ -9,16 +9,13 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 
-#include "src/shaders/shader.hpp"
+#include "shaders/shader.hpp"
 
 const int WINDOW_WIDTH = 600;
 const int WINDOW_HEIGHT = 400;
 
 const char* VERTEX_SHADER_FILE = "../src/shaders/VertexShader.vertexshader";
 const char* FRAGMENT_SHADER_FILE = "../src/shaders/FragmentShader.fragmentshader";
-
-//Forward Declaration
-void TestMatrices();
 
 bool initialize_glfw(){
     if (!glfwInit()){
@@ -125,12 +122,6 @@ int main(int argc, char** argv)
     //Shaders - Located in "common/shader.hpp"
     GLuint programID = LoadShaders(VERTEX_SHADER_FILE, FRAGMENT_SHADER_FILE);
 
-//________MATRICES____________________//
-
-    //TestMatrices();
-
-//______________________________________//
-
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
     
     do{
@@ -175,11 +166,4 @@ int main(int argc, char** argv)
     } while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(window) == 0);
 
     return 0;
-}
-
-void TestMatrices(){
-    //Matrices Test
-    glm::mat4 testMatrice;
-    glm::vec4 testVec;
-    glm::vec4 transformedVec = testMatrice * testVec; //Matrix * Vector, really important 
 }

@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/sly/workspace/dive/Ascent/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/ascent.dir/all
+all: CMakeFiles/Ascent.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/ascent.dir/clean
+clean: CMakeFiles/Ascent.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ascent.dir
+# Target rules for target CMakeFiles/Ascent.dir
 
 # All Build rule for target.
-CMakeFiles/ascent.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascent.dir/build.make CMakeFiles/ascent.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascent.dir/build.make CMakeFiles/ascent.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=1,2 "Built target ascent"
-.PHONY : CMakeFiles/ascent.dir/all
+CMakeFiles/Ascent.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=1,2,3 "Built target Ascent"
+.PHONY : CMakeFiles/Ascent.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ascent.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sly/workspace/dive/Ascent/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ascent.dir/all
+CMakeFiles/Ascent.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sly/workspace/dive/Ascent/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Ascent.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sly/workspace/dive/Ascent/build/CMakeFiles 0
-.PHONY : CMakeFiles/ascent.dir/rule
+.PHONY : CMakeFiles/Ascent.dir/rule
 
 # Convenience name for target.
-ascent: CMakeFiles/ascent.dir/rule
-.PHONY : ascent
+Ascent: CMakeFiles/Ascent.dir/rule
+.PHONY : Ascent
 
 # clean rule for target.
-CMakeFiles/ascent.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascent.dir/build.make CMakeFiles/ascent.dir/clean
-.PHONY : CMakeFiles/ascent.dir/clean
+CMakeFiles/Ascent.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/clean
+.PHONY : CMakeFiles/Ascent.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

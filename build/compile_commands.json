@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/sly/workspace/dive/Ascent/build",
-  "command": "/usr/bin/g++ -g -o CMakeFiles/ascent.dir/main.cpp.o -c /home/sly/workspace/dive/Ascent/main.cpp",
-  "file": "/home/sly/workspace/dive/Ascent/main.cpp"
-}
-]

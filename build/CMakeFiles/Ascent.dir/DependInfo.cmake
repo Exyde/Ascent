@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sly/workspace/dive/Ascent/main.cpp" "CMakeFiles/test.dir/main.cpp.o" "gcc" "CMakeFiles/test.dir/main.cpp.o.d"
+  "/home/sly/workspace/dive/Ascent/src/main.cpp" "CMakeFiles/Ascent.dir/src/main.cpp.o" "gcc" "CMakeFiles/Ascent.dir/src/main.cpp.o.d"
+  "/home/sly/workspace/dive/Ascent/src/shaders/shader.cpp" "CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o" "gcc" "CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o.d"
   )
 
 # Targets to which this target links.

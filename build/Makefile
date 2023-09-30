@@ -117,41 +117,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ascent
+# Target rules for targets named Ascent
 
 # Build rule for target.
-ascent: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ascent
-.PHONY : ascent
+Ascent: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Ascent
+.PHONY : Ascent
 
 # fast build rule for target.
-ascent/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascent.dir/build.make CMakeFiles/ascent.dir/build
-.PHONY : ascent/fast
+Ascent/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/build
+.PHONY : Ascent/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascent.dir/build.make CMakeFiles/ascent.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascent.dir/build.make CMakeFiles/ascent.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascent.dir/build.make CMakeFiles/ascent.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/shaders/shader.o: src/shaders/shader.cpp.o
+.PHONY : src/shaders/shader.o
+
+# target to build an object file
+src/shaders/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o
+.PHONY : src/shaders/shader.cpp.o
+
+src/shaders/shader.i: src/shaders/shader.cpp.i
+.PHONY : src/shaders/shader.i
+
+# target to preprocess a source file
+src/shaders/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/src/shaders/shader.cpp.i
+.PHONY : src/shaders/shader.cpp.i
+
+src/shaders/shader.s: src/shaders/shader.cpp.s
+.PHONY : src/shaders/shader.s
+
+# target to generate assembly for a file
+src/shaders/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/src/shaders/shader.cpp.s
+.PHONY : src/shaders/shader.cpp.s
 
 # Help Target
 help:
@@ -161,10 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ascent"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Ascent"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/shaders/shader.o"
+	@echo "... src/shaders/shader.i"
+	@echo "... src/shaders/shader.s"
 .PHONY : help
 
 
