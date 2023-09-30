@@ -2,7 +2,9 @@
 
 [Back to the the readme](../README.md)
 
-### *Clip Space / Clip Space Transformation*.  
+______________
+
+### *Clip Space / Clip Space Transformation*
 The first phase of rasterization is to transform the vertices of each triangle into a certain region of space. Everything within this volume will be rendered to the output image, and everything that falls outside of this region will not be. This region corresponds to the view of the world that the user wants to render.
 The volume that the triangle is transformed into is called, in OpenGL parlance, clip space. The positions of the triangle's vertices in clip space are called clip coordinates.
 Clip coordinates are a little different from regular positions. A position in 3D space has 3 coordinates. A position in clip space has four coordinates. The first three are the usual X, Y, Z positions; the fourth is called W. This last coordinate actually defines what the extents of clip space are for this vertex.
