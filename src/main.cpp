@@ -10,76 +10,15 @@
 #include <glm/glm.hpp>
 
 #include "shaders/shader.hpp"
-
-const int WINDOW_WIDTH = 600;
-const int WINDOW_HEIGHT = 400;
-
-const char* VERTEX_SHADER_FILE = "../src/shaders/VertexShader.vertexshader";
-const char* FRAGMENT_SHADER_FILE = "../src/shaders/FragmentShader.fragmentshader";
-
-bool initialize_glfw(){
-    if (!glfwInit()){
-        fprintf( stderr, "Failed to initalize GLFW\n" );
-        return false;
-    }
-    return true;
-}
-
-bool initliaze_glew(){
-    if (glewInit() != GLEW_OK){
-        fprintf(stderr, "Failed to initialize GLEW\n");
-        return false;
-    }
-    return true;
-}
-
-void set_windows_hint(){
-    //Settings Hints.
-    glfwWindowHint(GLFW_SAMPLES, 4); // 4x Anti-Aliasing.
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3); //OpenGL Version, 3.3
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); //Mac Os Happy.
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); //We don't want the old open GL... so ?
-}
-
-GLFWwindow* CreateWindow(){
-
-    GLFWwindow* window;
-        
-    window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Ascent Engine", NULL, NULL);
-
-    if (window == NULL){
-        fprintf( stderr, "Failed to open GLFW Window. If you have an Intel GPU, they are not 3.3 compatible. Try with the 2.1 version.\n" );
-        glfwTerminate();
-        return nullptr;
-    }
-
-    glfwMakeContextCurrent(window);
-
-    return window;
-}
-
-GLFWwindow* initialize_context(){
-
-    glewExperimental = true;
-
-    if (!initialize_glfw()) return nullptr;
-
-    set_windows_hint();
-
-    //Create the windows
-    GLFWwindow *window = CreateWindow();
-
-    if (!initliaze_glew()) return nullptr;
-
-    return window;
-}
+#include "core/core.hpp"
 
 int main(int argc, char** argv)
 {
     //Setup
-    GLFWwindow* window = initialize_context();
-    if (window == nullptr){
+    Core* core = new Core(600, 400);
+    bool succes = core->InitContext();
+
+    if (!succes){
         printf("Failed context initilisation. Quitting...");
         return -1;
     }
@@ -119,10 +58,13 @@ int main(int argc, char** argv)
     glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW); //Give the vertices to open GL
 
+    
+    const char* VERTEX_SHADER_FILE = "../src/shaders/VertexShader.vertexshader";
+    const char* FRAGMENT_SHADER_FILE = "../src/shaders/FragmentShader.fragmentshader";
     //Shaders - Located in "common/shader.hpp"
     GLuint programID = LoadShaders(VERTEX_SHADER_FILE, FRAGMENT_SHADER_FILE);
 
-    glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
+    glfwSetInputMode(core->window, GLFW_STICKY_KEYS, GL_TRUE);
     
     do{
         //Clear the screen.
@@ -158,12 +100,12 @@ int main(int argc, char** argv)
 
 
         //Buffer Swap
-        glfwSwapBuffers(window);
+        glfwSwapBuffers(core->window);
 
         //Polling Events
         glfwPollEvents();
 
-    } while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(window) == 0);
+    } while (glfwGetKey(core->window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(core->window) == 0);
 
     return 0;
 }

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/Ascent.dir/src/main.cpp.o CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o -o Ascent  -lglfw -lGLEW /usr/lib/x86_64-linux-gnu/libGL.so.1 
+/usr/bin/c++ CMakeFiles/Ascent.dir/src/core/core.cpp.o CMakeFiles/Ascent.dir/src/main.cpp.o CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o -o Ascent  -lglfw -lGLEW /usr/lib/x86_64-linux-gnu/libGL.so.1 

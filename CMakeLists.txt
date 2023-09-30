@@ -9,7 +9,7 @@ project(Ascent)
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/runtime)
 
 # Specify the directory for object files
-set(CMAKE_OBJECT_PATH_MAX 1)  # To make sure object files go to the obj directory
+#set(CMAKE_OBJECT_PATH_MAX 1)  # To make sure object files go to the obj directory
 
 #Packages Search
 find_package(OpenGL REQUIRED)
@@ -22,6 +22,7 @@ file(GLOB_RECURSE SOURCES "src/*.cpp")
 #set(SOURCES
 #    src/main.cpp
 #    src/shaders/shader.cpp)
+#    src/core/core.cpp
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 target_link_libraries(${PROJECT_NAME} glfw GLEW /usr/lib/x86_64-linux-gnu/libGL.so.1 )

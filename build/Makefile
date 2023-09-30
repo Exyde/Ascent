@@ -129,6 +129,30 @@ Ascent/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/build
 .PHONY : Ascent/fast
 
+src/core/core.o: src/core/core.cpp.o
+.PHONY : src/core/core.o
+
+# target to build an object file
+src/core/core.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/src/core/core.cpp.o
+.PHONY : src/core/core.cpp.o
+
+src/core/core.i: src/core/core.cpp.i
+.PHONY : src/core/core.i
+
+# target to preprocess a source file
+src/core/core.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/src/core/core.cpp.i
+.PHONY : src/core/core.cpp.i
+
+src/core/core.s: src/core/core.cpp.s
+.PHONY : src/core/core.s
+
+# target to generate assembly for a file
+src/core/core.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ascent.dir/build.make CMakeFiles/Ascent.dir/src/core/core.cpp.s
+.PHONY : src/core/core.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Ascent"
+	@echo "... src/core/core.o"
+	@echo "... src/core/core.i"
+	@echo "... src/core/core.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
