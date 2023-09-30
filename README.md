@@ -3,9 +3,9 @@
 
 # *Goals*
 This project is for learning purposes only right now.
-After the "Unity Crisis", I  was confused between leaving Unity and moving to Godot/Unreal, stay, or try something news.
+After the "*Unity Crisis*", I  was confused between leaving Unity and moving to Godot/Unreal, stay, or try something new.
 I decided to not be "hard linked" to any kind of other proprietary engine for now, and dive back in to the core of the rendering. 
-Parallel to this project I'll take a look at some others tools (Houdini/Substance to name a few)
+Parallel to this project I'll take a look at some others tools (*Houdini/Substance to name a few*)
 
 # *Target* 
 - 3D Scene View
