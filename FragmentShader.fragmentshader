@@ -1,0 +1,13 @@
+#version 330 core
+
+smooth in vec4 oColor;
+out vec4 color;
+
+void main(){
+    float lerpValue = gl_FragCoord.y /500.0;
+
+
+
+    color = mix(oColor, vec4(1, 1, 0, 1), lerpValue);
+    color = oColor;
+}

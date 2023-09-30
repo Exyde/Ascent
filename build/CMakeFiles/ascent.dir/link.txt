@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ascent.dir/main.cpp.o -o ascent  -lglfw -lGLEW /usr/lib/x86_64-linux-gnu/libGL.so.1 
