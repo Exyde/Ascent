@@ -28,3 +28,4 @@ There's also some good references here :
 
 ________________________________
 
+[Documentation](doc/documentation.md)
