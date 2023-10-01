@@ -14,7 +14,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <GL/freeglut.h>
-#include <glm/glm.hpp>
+//#include <glm/glm.hpp> //Math Libs
 
 #include "shaders/shader.hpp"
 #include "core/core.hpp"
@@ -22,7 +22,6 @@
 //Wrapper
 #include "VertexArray.hpp"
 #include "VertexBuffer.hpp"
-
 
 //Shaders
 //const char* VERTEX_SHADER_FILE = "../src/shaders/VertexShader.glsl";
@@ -137,6 +136,32 @@ const float vertexDatas[] = {
 
 };
 
+void SetupIMGUI(GLFWwindow* window){
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO(); (void)io; //????????
+    ImGui::StyleColorsDark();
+    ImGui_ImplGlfw_InitForOpenGL(window, true);
+    ImGui_ImplOpenGL3_Init("#version 330");
+}
+
+void CreateFrame(){
+    ImGui_ImplOpenGL3_NewFrame();
+    ImGui_ImplGlfw_NewFrame();
+    ImGui::NewFrame();
+}
+
+void CreateTestWindow(){
+    ImGui::Begin("Test Window !");
+    ImGui::Text("He hehehehehe :D");
+    ImGui::End();
+}
+
+void Render(){
+    ImGui::Render();
+    ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+}
+
 int main(int argc, char** argv)
 {
     //Setup
@@ -171,10 +196,16 @@ int main(int argc, char** argv)
     GLint timeUniformID = glGetUniformLocation(programID, "time"); //All shader shoulds have acces to time imo.
     SetUniforms(programID);
 
+    //IMGUI 
+    SetupIMGUI(core->window);
+
     do{
         //Clear the screen.
         glClearColor(0.2f, 0.0f, 0.2f, 1.0f);
         glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        //IMGUI
+        CreateFrame();
 
         //Set shaders pipe
         glUseProgram(programID);
@@ -182,7 +213,7 @@ int main(int argc, char** argv)
         //Set Uniforms
         glUniform1f(timeUniformID, glfwGetTime());
 
-        //Bind the VBO
+        //Bind the VBOio
         vertexBuffer.Bind();
         size_t colorData = sizeof(vertexDatas) / 2; //Half the size of the array, easier for VertexAttribPointer last param !
         
@@ -207,6 +238,11 @@ int main(int argc, char** argv)
         glDisableVertexAttribArray(0);
         glDisableVertexAttribArray(1);
 
+        //IMGUI
+        CreateTestWindow();
+        ImGui::ShowDemoWindow();
+        Render();
+
         //Buffer Swap
         glfwSwapBuffers(core->window);
 
@@ -214,6 +250,11 @@ int main(int argc, char** argv)
         glfwPollEvents();
 
     } while (glfwGetKey(core->window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(window) == 0);
+
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
+
 
     return 0;
 }
