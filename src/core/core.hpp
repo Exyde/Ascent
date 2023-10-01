@@ -14,7 +14,7 @@ public:
     int WINDOW_HEIGHT;
     int WINDOW_WIDTH;
     //Methods
-    bool InitContext();
+    GLFWwindow* InitContext();
 
 private:
     bool SetupWindow();

@@ -21,9 +21,37 @@ Triangle then goes through **Scan Conversion**. This step produce a **fragment**
 Then the end : **Fragment processing**, transforming the fragment in one or more color values + 1 depth value. All the fragments of a triangle are processed until the next. Then is **Fragment Writing**, the fragment is written to the **destination image**. (combinating colors, depth, etc... Get back later !)
 Some of this step can be hooked in by **Shaders** (Vertex, Fragment... and more) to add complexity, offset so CPU Load and much more !
 
+
+____
+
+### Projections
+A projection, in term of *rendering pipeline* is a way to transform a world *from one dimensionality to another*.
+*Finite Projecton* transform the world from one dimension *to a lower* one. (Our case).
+
+**Orthographic Projection** : Flatenned, throw away the coordinate perpendicular to the surface. It capture the cube in front of it.
+
+**Perspective Projection** : Realistical - The world is seen from and though a single point. It capture a larger part of the world.
+In 2D the shape is a *regular trapezoid*.  In 3D the shape is called a **Frustrum** (kinda a pyramid with the tip chopped away !). 
+
+#### Mathematical Perspective
+Base assumptions for ou start work here 
+- The plane projection is *axis-aligned*, face down the **-Z** awis (-Z is behind us, far away).
+- The eye point is fixed at **[0, 0, 0]**
+- The plane size is *[-1, 1]*. Everything outside this range is not drawn. Remember, we're projecting 3D thing on a 2D Plane !
+
+Well, it sounds like **Normalized Device Coordinates...** But hold on.
+
+The things are :
+- Vertices further in Z axis are pushed away from the eye.
+- Vertices further in XY axis, aka away from center, are pushed away as well (Because of the shape of the frustrum)
+
+{TODO} -> [Re-read](file:///home/sly/workspace/dive/gltut/website/Positioning/Tut04%20Perspective%20Projection.html)
+
+_____
+
 ## *Questions / Explorations*
 - How to use different Context/Windows ?
-
+- How to set differents Shaders Options ? Can we pass multiple vertex shader ? ( not sure )
 ______________
 [Back to the the readme](../README.md)
 ______________

@@ -1,6 +1,6 @@
 #include "shader.hpp"
 
-GLuint ReadCompileAndCheckShader(const char* path, const GLuint ID){
+GLuint Shader::ReadCompileAndCheckShader(const char* path, const GLuint ID){
 
     //Read Shader from File
     std::string shaderCode;
@@ -38,8 +38,7 @@ GLuint ReadCompileAndCheckShader(const char* path, const GLuint ID){
 }
 
 //Loading Shaders
-GLuint LoadShaders(const char * vertex_file_path, const char * fragment_file_path){
-
+GLuint Shader::LoadShaders(const char * vertex_file_path, const char * fragment_file_path){
 
     //Create the Shaders
     GLuint VertexShaderID = glCreateShader(GL_VERTEX_SHADER);

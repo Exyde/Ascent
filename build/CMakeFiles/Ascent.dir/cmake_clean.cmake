@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "Ascent"
   "Ascent.pdb"
+  "CMakeFiles/Ascent.dir/src/VertexArray.cpp.o"
+  "CMakeFiles/Ascent.dir/src/VertexArray.cpp.o.d"
+  "CMakeFiles/Ascent.dir/src/VertexBuffer.cpp.o"
+  "CMakeFiles/Ascent.dir/src/VertexBuffer.cpp.o.d"
   "CMakeFiles/Ascent.dir/src/core/core.cpp.o"
   "CMakeFiles/Ascent.dir/src/core/core.cpp.o.d"
   "CMakeFiles/Ascent.dir/src/main.cpp.o"

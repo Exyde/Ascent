@@ -22,6 +22,7 @@ bool Core::Init_GLEW(){
     return true;
 }
 
+
 void Core::SetWindowHints(){
     glfwWindowHint(GLFW_SAMPLES, 4); // 4x Anti-Aliasing.
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3); //OpenGL Version, 3.3
@@ -46,16 +47,16 @@ bool Core::SetupWindow(){
     return true;
 }
 
-bool Core::InitContext(){
+GLFWwindow* Core::InitContext(){
 
     glewExperimental = true;
 
-    if (!Init_GLFW()) return false;
+    if (!Init_GLFW()) return nullptr;
 
     SetWindowHints();
     SetupWindow();
 
-    if (!Init_GLEW()) return false;
+    if (!Init_GLEW()) return nullptr;
 
-    return true;
+    return window;
 }
