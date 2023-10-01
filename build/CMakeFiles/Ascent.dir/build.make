@@ -111,10 +111,108 @@ CMakeFiles/Ascent.dir/src/core/core.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ascent.dir/src/core/core.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sly/workspace/dive/Ascent/src/core/core.cpp -o CMakeFiles/Ascent.dir/src/core/core.cpp.s
 
+CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.o: CMakeFiles/Ascent.dir/flags.make
+CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.o: ../src/imgui/imgui.cpp
+CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.o: CMakeFiles/Ascent.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.o -MF CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.o.d -o CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.o -c /home/sly/workspace/dive/Ascent/src/imgui/imgui.cpp
+
+CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sly/workspace/dive/Ascent/src/imgui/imgui.cpp > CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.i
+
+CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sly/workspace/dive/Ascent/src/imgui/imgui.cpp -o CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.s
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.o: CMakeFiles/Ascent.dir/flags.make
+CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.o: ../src/imgui/imgui_demo.cpp
+CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.o: CMakeFiles/Ascent.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.o -MF CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.o.d -o CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.o -c /home/sly/workspace/dive/Ascent/src/imgui/imgui_demo.cpp
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sly/workspace/dive/Ascent/src/imgui/imgui_demo.cpp > CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.i
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sly/workspace/dive/Ascent/src/imgui/imgui_demo.cpp -o CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.s
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.o: CMakeFiles/Ascent.dir/flags.make
+CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.o: ../src/imgui/imgui_draw.cpp
+CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.o: CMakeFiles/Ascent.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.o -MF CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.o.d -o CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.o -c /home/sly/workspace/dive/Ascent/src/imgui/imgui_draw.cpp
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sly/workspace/dive/Ascent/src/imgui/imgui_draw.cpp > CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.i
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sly/workspace/dive/Ascent/src/imgui/imgui_draw.cpp -o CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.s
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/Ascent.dir/flags.make
+CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.o: ../src/imgui/imgui_impl_glfw.cpp
+CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/Ascent.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.o -MF CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.o.d -o CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.o -c /home/sly/workspace/dive/Ascent/src/imgui/imgui_impl_glfw.cpp
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sly/workspace/dive/Ascent/src/imgui/imgui_impl_glfw.cpp > CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.i
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sly/workspace/dive/Ascent/src/imgui/imgui_impl_glfw.cpp -o CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.s
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/Ascent.dir/flags.make
+CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.o: ../src/imgui/imgui_impl_opengl3.cpp
+CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/Ascent.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.o -c /home/sly/workspace/dive/Ascent/src/imgui/imgui_impl_opengl3.cpp
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sly/workspace/dive/Ascent/src/imgui/imgui_impl_opengl3.cpp > CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.i
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sly/workspace/dive/Ascent/src/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.s
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.o: CMakeFiles/Ascent.dir/flags.make
+CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.o: ../src/imgui/imgui_tables.cpp
+CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.o: CMakeFiles/Ascent.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.o -MF CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.o.d -o CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.o -c /home/sly/workspace/dive/Ascent/src/imgui/imgui_tables.cpp
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sly/workspace/dive/Ascent/src/imgui/imgui_tables.cpp > CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.i
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sly/workspace/dive/Ascent/src/imgui/imgui_tables.cpp -o CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.s
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.o: CMakeFiles/Ascent.dir/flags.make
+CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.o: ../src/imgui/imgui_widgets.cpp
+CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.o: CMakeFiles/Ascent.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.o -MF CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.o -c /home/sly/workspace/dive/Ascent/src/imgui/imgui_widgets.cpp
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sly/workspace/dive/Ascent/src/imgui/imgui_widgets.cpp > CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.i
+
+CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sly/workspace/dive/Ascent/src/imgui/imgui_widgets.cpp -o CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.s
+
 CMakeFiles/Ascent.dir/src/main.cpp.o: CMakeFiles/Ascent.dir/flags.make
 CMakeFiles/Ascent.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/Ascent.dir/src/main.cpp.o: CMakeFiles/Ascent.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ascent.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Ascent.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ascent.dir/src/main.cpp.o -MF CMakeFiles/Ascent.dir/src/main.cpp.o.d -o CMakeFiles/Ascent.dir/src/main.cpp.o -c /home/sly/workspace/dive/Ascent/src/main.cpp
 
 CMakeFiles/Ascent.dir/src/main.cpp.i: cmake_force
@@ -128,7 +226,7 @@ CMakeFiles/Ascent.dir/src/main.cpp.s: cmake_force
 CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o: CMakeFiles/Ascent.dir/flags.make
 CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o: ../src/shaders/shader.cpp
 CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o: CMakeFiles/Ascent.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o -MF CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o.d -o CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o -c /home/sly/workspace/dive/Ascent/src/shaders/shader.cpp
 
 CMakeFiles/Ascent.dir/src/shaders/shader.cpp.i: cmake_force
@@ -144,6 +242,13 @@ Ascent_OBJECTS = \
 "CMakeFiles/Ascent.dir/src/VertexArray.cpp.o" \
 "CMakeFiles/Ascent.dir/src/VertexBuffer.cpp.o" \
 "CMakeFiles/Ascent.dir/src/core/core.cpp.o" \
+"CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.o" \
+"CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.o" \
+"CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.o" \
+"CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.o" \
+"CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.o" \
+"CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.o" \
+"CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.o" \
 "CMakeFiles/Ascent.dir/src/main.cpp.o" \
 "CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o"
 
@@ -153,12 +258,19 @@ Ascent_EXTERNAL_OBJECTS =
 Ascent: CMakeFiles/Ascent.dir/src/VertexArray.cpp.o
 Ascent: CMakeFiles/Ascent.dir/src/VertexBuffer.cpp.o
 Ascent: CMakeFiles/Ascent.dir/src/core/core.cpp.o
+Ascent: CMakeFiles/Ascent.dir/src/imgui/imgui.cpp.o
+Ascent: CMakeFiles/Ascent.dir/src/imgui/imgui_demo.cpp.o
+Ascent: CMakeFiles/Ascent.dir/src/imgui/imgui_draw.cpp.o
+Ascent: CMakeFiles/Ascent.dir/src/imgui/imgui_impl_glfw.cpp.o
+Ascent: CMakeFiles/Ascent.dir/src/imgui/imgui_impl_opengl3.cpp.o
+Ascent: CMakeFiles/Ascent.dir/src/imgui/imgui_tables.cpp.o
+Ascent: CMakeFiles/Ascent.dir/src/imgui/imgui_widgets.cpp.o
 Ascent: CMakeFiles/Ascent.dir/src/main.cpp.o
 Ascent: CMakeFiles/Ascent.dir/src/shaders/shader.cpp.o
 Ascent: CMakeFiles/Ascent.dir/build.make
 Ascent: /usr/lib/x86_64-linux-gnu/libGL.so.1
 Ascent: CMakeFiles/Ascent.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Ascent"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sly/workspace/dive/Ascent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Ascent"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Ascent.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

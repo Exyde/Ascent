@@ -1,6 +1,4 @@
-rm -rd build/
-mkdir build && cd build
-cmake ..
+cd build
 make all
 ./Ascent
 cd ..

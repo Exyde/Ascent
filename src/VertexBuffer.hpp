@@ -8,6 +8,7 @@ public:
     VertexBuffer(GLuint size, const float data[]);
     void Init();
     void Bind() const;
+    void Unbind() const;
     GLuint GetID() const;
     GLuint GetSize() const;
     void SetData(const float data[]) const;

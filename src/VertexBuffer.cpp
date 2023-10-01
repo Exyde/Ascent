@@ -20,6 +20,10 @@ void VertexBuffer::Bind() const{
     glBindBuffer(GL_ARRAY_BUFFER, m_id);
 }
 
+void VertexBuffer::Unbind() const{
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+}
+
 void VertexBuffer::SetData(const float data[]) const{
     glBufferData(GL_ARRAY_BUFFER, m_size, data, GL_STATIC_DRAW);
 }
